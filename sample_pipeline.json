@@ -1,0 +1,58 @@
+{
+  "_note": "Fictional sample data. Shows the schema only.",
+  "metadata": {
+    "version": "3.0",
+    "audit_period_start": "2026-07-28",
+    "audit_period_end": "2026-08-04",
+    "total_entities": 3
+  },
+  "entities": [
+    {
+      "id": "MX_BANK_A_001",
+      "country": "MX",
+      "name": "Example Bank A",
+      "type": "Issuer/Acquirer",
+      "tier": "T1",
+      "status": "live",
+      "contacts": [
+        { "role": "Head of Payments", "status": "replied", "attempts": 2, "last_contact": "2026-07-30" }
+      ],
+      "emails_sent": 4,
+      "bounces": 0,
+      "replies": 1,
+      "next_action": "schedule_discovery_call",
+      "urgency": "high"
+    },
+    {
+      "id": "CO_FINTECH_B_001",
+      "country": "CO",
+      "name": "Example Fintech B",
+      "type": "Issuer",
+      "tier": "T2",
+      "status": "sent",
+      "contacts": [
+        { "role": "VP Cards", "status": "no_reply", "attempts": 1, "last_contact": "2026-07-22" }
+      ],
+      "emails_sent": 5,
+      "bounces": 3,
+      "replies": 0,
+      "notes": "60% bounce rate: likely domain filter, switch to LinkedIn DM",
+      "next_action": "linkedin_dm",
+      "urgency": "medium"
+    },
+    {
+      "id": "PE_ACQUIRER_C_001",
+      "country": "PE",
+      "name": "Example Acquirer C",
+      "type": "Acquirer",
+      "tier": "T1",
+      "status": "pending",
+      "contacts": [],
+      "emails_sent": 0,
+      "bounces": 0,
+      "replies": 0,
+      "next_action": "find_decision_maker",
+      "urgency": "high"
+    }
+  ]
+}
